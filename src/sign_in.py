@@ -7,7 +7,7 @@ def sign_in():
         master_pass = input("Enter master password: ")
         connection = connect_to_database()
         if password_matches(master_pass):
-            grant_access()
+            ""
 
 
 
