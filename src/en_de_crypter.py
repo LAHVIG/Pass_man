@@ -43,12 +43,4 @@ def decrypt(master_password, ciphertext):
     # Return the decrypted plaintext
     return plaintext
 
-def main():
-    user_in = input("enter what you would like to hide: ")
-    master_pass = input("enter master password: ")
-    decrypted = decrypt(master_pass, user_in)
-    print(decrypted)
-    input("")
 
-if __name__ == "__main__":
-    main()
