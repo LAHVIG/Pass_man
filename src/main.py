@@ -1,5 +1,5 @@
 import os
-import sign_in
+from sign_in import *
 
 def main():
     os.system("cls")

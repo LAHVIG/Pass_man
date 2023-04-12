@@ -1,13 +1,17 @@
 from en_de_crypter import decrypt
+from db_connection import new_connect_to_db, new_cursor;
 
 
 def sign_in():
     user_credentials = input("Enter you username: ")
     if user_exists(user_credentials):
         master_pass = input("Enter master password: ")
-        connection = connect_to_database()
+        
         if password_matches(master_pass):
             ""
+            connection = new_connect_to_db("password_database.db")
+            #cursor = new_cursor(connection)
+            print("cursor conected")
 
 
 
