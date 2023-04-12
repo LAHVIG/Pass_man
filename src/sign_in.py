@@ -1,5 +1,4 @@
 from en_de_crypter import decrypt
-from db_connection import new_connect_to_db, new_cursor;
 
 
 def sign_in():
@@ -9,9 +8,6 @@ def sign_in():
         
         if password_matches(master_pass):
             ""
-            #connection = new_connect_to_db("password_database.db")
-            #cursor = new_cursor(connection)
-            print("cursor conected")
 
 
 
