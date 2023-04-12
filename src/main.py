@@ -1,5 +1,5 @@
 import os
-import sign_in
+from sign_in import *
 
 def main():
     os.system("cls")
@@ -24,4 +24,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()  

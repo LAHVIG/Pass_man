@@ -1,12 +1,13 @@
 from en_de_crypter import decrypt
+from db_connection import *
 
 
 def sign_in():
     user_credentials = input("Enter you username: ")
     if user_exists(user_credentials):
         master_pass = input("Enter master password: ")
-        connection = connect_to_database()
-        if password_matches(master_pass):
+        connection = connect_to_db()
+        if password_matches(master_pass, connection):
             ""
 
 
@@ -15,8 +16,6 @@ def user_exists(usr):
     ""
     return True
 
-def connect_to_database():
-    ""
 
 def password_matches(master_pass):
     ""
